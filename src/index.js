@@ -14,13 +14,13 @@ bin.stringToBytes = function(str) {
 };
 
 bin.bytesToString = function(bytes) {
-    var str = [],
+    var str = "",
         i = -1,
         il = bytes.length - 1;
 
     while (i++ < il) {
-        str.push(String.fromCharCode(bytes[i]));
+        str += String.fromCharCode(bytes[i]);
     }
 
-    return str.join("");
+    return str;
 };
